@@ -28,7 +28,7 @@ def detection(image_path):
   # load the image
   img = load_image(image_path)
   # load model
-  model = load_model('weights/final_model.h5')
+  model = load_model('final_model.h5')
   # predict the class
   predict_value = model.predict(img)
   digit = argmax(predict_value)
